@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.title{
+    margin-bottom:50px;
+    .underline{
+        width: 10%;
+        margin: 0 auto;
+        border: 5px solid #3F51B5;
+        margin-top: 10px;
+    }
+}
+.offset:before{
+	display:block;
+    content:"";
+    height:4rem;
+    margin-top:4rem;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    min-height: 300px;
+    background-image: url(img/mainvisual.png);
+    background-size: cover;
+    // navbar
+    .navbar{
+        background-color:rgba($color: #3F51B5, $alpha: 0.8) !important;
+        height: 4rem;
+        .navbar-nav{
+            .nav-item{
+                .nav-link{
+                    color: white;
+                    font-size: 1.5vw;
+                    transition: all 0.5s ease 0s;
+                    &:hover,
+                    &.active{
+                        color: black;
+                        border-bottom: black 2px solid;
+
+                    }
+                }
+            }
+        }
+    }
+    // header-wrapper
+    .header-wrapper{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%);
+        white-space: nowrap;
+        h1{
+            font-size: 68px;
+            margin-bottom: 12px;
+        }
+        p{
+            font-size: 38px;
+        }
+        a{
+            margin-top: 80px;
+            background-color: #3F51B5;
+            border-color: #3F51B5;border-radius: 0;
+            transition: all 0.5s ease 0s;
+            color: white;
+            &:hover{
+                opacity: 0.8;
+            }
+        }
+    }
+}
+// card
+#card{
+    .card-img{
+        padding: 20px;
+        background-color: #000;
+    }
+    .card-body{
+        background-color:pink;
+        padding: 0;
+    }
+    .col-4{
+        margin-bottom: 30px;
+    }
+}
+// card
+
+
+// voice
+#voice{
+    transition: all 0.5s ease 0s;
+ 
+    .voice-img{
+        background-color: red;
+        padding: 20px;
+        margin-bottom: 50px;
+        img{
+            width: 100%;
+            height: 100%;
+            transition: all 1s ease 0s;
+            &:hover{
+                opacity: 0.5;
+            }
+        }
+    }
+    .voice-text{
+        background-color: blue;
+        padding: 20px;
+        font-size: 2vw;
+        margin-bottom: 50px;
+    }
+  
+}
+// voice
+
+// blog
+#blog{
+    .blog-wrapper{
+        margin-bottom: 50px;
+        .blog-left{
+            background-color: pink;
+            padding: 20px;
+            transition: all 0.5s ease 0s;
+            &:hover{
+                background-color: #000;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                transition: all 0.5s ease 0s;
+                &:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .blog-right{
+            background-color: red;
+            padding: 20px;
+            .blog-contents{
+                display: flex;
+                justify-content: space-between;
+                background-color: aqua;
+                padding: 10px;
+                height: 20%;
+
+                p{
+                    margin: 0;
+                }
+            }
+            .blog-text{
+                background-color: blue;
+                padding: 10px;
+                height: 60%;
+                font-size: 1vw;
+                
+            }
+            .blog-link{
+                background-color: black;
+                padding: 10px;
+                height: 20%;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    
+                }
+            }
+        }
+    }
+}
+// blog
+
+#news{
+    background-color: brown;
+    padding-bottom: 50px;
+    .news-wrapper{
+        background-color: yellow;
+        width: 80%;
+        margin: 0 auto;
+        border-bottom: 5px double black ;
+        dl{
+            display: flex;
+            // justify-content: space-between;
+            margin: 0pc;
+            dt{
+                background-color: yellowgreen;
+                padding: 20px;
+            }
+            dd{
+                margin:0 30px;
+                padding: 20px;
+                a{
+                    text-emphasis: none;
+                color: black!important;
+                }
+                .btn{
+                    border-radius: 0;
+                }
+            }
+        }
+    }
+}
